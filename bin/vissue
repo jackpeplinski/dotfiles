@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# remimplemented as `gh view-md` in the `gh` CLI
-gh view-md "$@"

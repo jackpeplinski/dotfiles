@@ -1,12 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "cleanupPeriodDays": 60,
+  "includeCoAuthoredBy": false,
+  "autoUpdaterStatus": "enabled",
+  "hasCompletedOnboarding": true,
   "env": {
-    "MAX_MCP_OUTPUT_TOKENS": "35000",
-    "EDITOR": "nvim",
-    "GIT_EDITOR": "nvim"
+    "ANTHROPIC_BASE_URL": "https://proxy-shopify-ai.local.shop.dev/vendors/anthropic-claude-code",
+    "ANTHROPIC_AUTH_TOKEN": "dummy_key",
+    "MAX_MCP_OUTPUT_TOKENS": "35000"
   },
-  "includeCoAuthoredBy": true,
   "permissions": {
     "allow": [
       "Bash(/usr/bin/osascript:*)",
@@ -14,12 +16,7 @@
       "Bash(grep:*)",
       "Bash(mcp:*)",
       "Bash(pwd:*)",
-      "mcp__josh-notes__search_posts",
-      "WebFetch(domain:www.joshbeckman.org)",
-      "mcp__josh-beckman-status__get_status",
-      "mcp__josh-beckman-status__get_current_time_of_day",
-      "Bash(preview-md:*)",
-      "mcp__josh-notes__get_post"
+      "Bash(preview-md:*)"
     ],
     "additionalDirectories": [
       "~/Downloads",
@@ -34,7 +31,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -r '.message' | xargs -I {} terminal-notifier -message \"{}\" -title \"Claude Hook\" -group \"$(pwd):hook\" -execute \"/opt/homebrew/bin/wezterm cli activate-pane --pane-id $WEZTERM_PANE\" -activate com.github.wez.wezterm"
+            "command": "terminal-notifier -title 'Claude' -message '{{message}}' -sound default -group 'claude-notifications'"
           }
         ]
       }

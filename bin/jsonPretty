@@ -1,4 +1,0 @@
-#!/bin/sh
-#
-
-curl "$@" -H "accept:application/json" -s | python -m json.tool | ccat

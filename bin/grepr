@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# Search recursively through a directory, with some lipstick on the pig
-#
-echo ""; # space things out a bit for scanning
-grep -r "$1" $2 --color -n;
-echo "";

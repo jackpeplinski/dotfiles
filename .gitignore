@@ -8,5 +8,9 @@ bin/golint
 .claude/projects/
 .claude/statsig/
 .claude/todos/
+.claude/debug/
+.claude/file-history/
+.claude/shell-snapshots/
+.claude/history.jsonl
 
 bin/.auto-review-skip

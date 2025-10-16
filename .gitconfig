@@ -1,8 +1,6 @@
 [user]
-	name = Josh Beckman
-	email = josh@joshbeckman.org
-[core]
-	editor = nvim
+    name = Jack Peplinski 
+    email = jackepeplinski@gmail.com 
 [alias]
     ada = add -A
     add = add -v
@@ -42,12 +40,10 @@
     web = instaweb
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     cleanonmain = !git checkout main && gt sync && git remote prune origin
-[init]
-	templatedir = ~/.git-templates
 [github]
-	user = joshbeckman
+	user = jackpeplinski 
 [ghi]
-	token = !security find-internet-password -a joshbeckman -s github.com -l 'ghi token' -w
+	token = !security find-internet-password -a jackpeplinski -s github.com -l 'ghi token' -w
 [push]
 	default = simple
 [pull]
@@ -58,9 +54,6 @@
 	url = https://gitlab.com
 [merge]
 	tool = vimdiff
-[commit]
-        template = ~/.git-templates/.gitmessage
-        verbose = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
