@@ -16,7 +16,11 @@
       "Bash(grep:*)",
       "Bash(mcp:*)",
       "Bash(pwd:*)",
-      "Bash(preview-md:*)"
+      "Bash(preview-md:*)",
+      "Bash(gh:issue list*)",
+      "Bash(gh:pr list*)",
+      "Bash(gh:pr diff*)",
+      "Bash(gh:label list*)"
     ],
     "additionalDirectories": [
       "~/Downloads",
@@ -31,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title 'Claude' -message '{{message}}' -sound default -group 'claude-notifications'"
+            "command": "terminal-notifier -title 'Claude' -message '{{message}} -group 'claude-notifications' "
           }
         ]
       }
