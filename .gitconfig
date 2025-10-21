@@ -61,3 +61,5 @@
 	required = true
 [include]
 	path = /Users/jackpeplinski/.config/dev/gitconfig
+[maintenance]
+	repo = /Users/jackpeplinski/world/trees/root/src

@@ -1,14 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "cleanupPeriodDays": 60,
-  "includeCoAuthoredBy": false,
-  "autoUpdaterStatus": "enabled",
-  "hasCompletedOnboarding": true,
   "env": {
     "ANTHROPIC_BASE_URL": "https://proxy-shopify-ai.local.shop.dev/vendors/anthropic-claude-code",
     "ANTHROPIC_AUTH_TOKEN": "dummy_key",
-    "MAX_MCP_OUTPUT_TOKENS": "35000"
+    "CLAUDE_CODE_SKIP_AUTH_LOGIN": "true"
   },
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(/usr/bin/osascript:*)",
@@ -17,10 +15,16 @@
       "Bash(mcp:*)",
       "Bash(pwd:*)",
       "Bash(preview-md:*)",
-      "Bash(gh:issue list*)",
-      "Bash(gh:pr list*)",
-      "Bash(gh:pr diff*)",
-      "Bash(gh:label list*)"
+      "Bash(gh:issue list:*)",
+      "Bash(gh:pr list:*)",
+      "Bash(gh:pr diff:*)",
+      "Bash(gh:label list:*)",
+      "Bash(bin/rails test:*)",
+      "Bash(yarn lint:*)",
+      "Bash(yarn test:*)",
+      "Bash(yarn eslint:*)",
+      "Bash(pnpm run test:*)",
+      "Bash(lsof -i:*)"
     ],
     "additionalDirectories": [
       "~/Downloads",
@@ -41,6 +45,9 @@
       }
     ]
   },
+  "alwaysThinkingEnabled": false,
+  "autoUpdaterStatus": "enabled",
+  "hasCompletedOnboarding": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754147115362
   }
