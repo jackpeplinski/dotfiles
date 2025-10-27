@@ -16,15 +16,17 @@
       "Bash(pwd:*)",
       "Bash(preview-md:*)",
       "Bash(gh:issue list:*)",
-      "Bash(gh:pr list:*)",
-      "Bash(gh:pr diff:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr view:*)",
       "Bash(gh:label list:*)",
       "Bash(bin/rails test:*)",
       "Bash(yarn lint:*)",
       "Bash(yarn test:*)",
       "Bash(yarn eslint:*)",
       "Bash(pnpm run test:*)",
-      "Bash(lsof -i:*)"
+      "Bash(lsof -i:*)",
+      "Bash(git reflog:*)"
     ],
     "additionalDirectories": [
       "~/Downloads",

@@ -251,3 +251,8 @@ Implementing our own could introduce vulnerabilities.
 ## Time and Date Handling
 
 You should use the josh-beckman-status get_current_time_of_day tool for determing what day it is (when doing things with calendars, reporting, etc.)
+
+## Other
+Use RBS comment syntax, NOT sig {} or  T.* assertions when writing NEW files; otherwise, follow the existing file conventions.
+Do NOT run or suggest bundle install; use dev up instead.
+If you notice a comment has been removed, do not add it back.

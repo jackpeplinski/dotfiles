@@ -110,6 +110,8 @@ source $ZSH/oh-my-zsh.sh
 alias gtmas="gt m -a && gt submit --stack --update-only"
 alias gtcam="gt c -am"
 
+alias gitcam = "git add . && git commit --amend --no-edit && git push --force-with-lease"
+
 # Added by tec agent
 [[ -x /Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init zsh)"
 
