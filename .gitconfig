@@ -54,12 +54,12 @@
 	url = https://gitlab.com
 [merge]
 	tool = vimdiff
+[include]
+	path = /Users/jackpeplinski/.config/dev/gitconfig
+[maintenance]
+	repo = /Users/jackpeplinski/world/trees/root/src
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[include]
-	path = /Users/jackpeplinski/.config/dev/gitconfig
-[maintenance]
-	repo = /Users/jackpeplinski/world/trees/root/src

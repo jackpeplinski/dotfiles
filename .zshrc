@@ -110,8 +110,6 @@ source $ZSH/oh-my-zsh.sh
 alias gtmas="gt m -a && gt submit --stack --update-only"
 alias gtcam="gt c -am"
 
-alias gitcam = "git add . && git commit --amend --no-edit && git push --force-with-lease"
-
 # Added by tec agent
 [[ -x /Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init zsh)"
 
@@ -124,3 +122,8 @@ precmd() {
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export CLOUDSDK_PYTHON="/opt/homebrew/bin/python3.13"
+export PATH="/opt/homebrew/bin:$PATH"
+export CLOUDSDK_PYTHON="/opt/homebrew/bin/python3.13"

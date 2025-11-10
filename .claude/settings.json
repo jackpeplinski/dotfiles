@@ -9,7 +9,6 @@
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
-      "Bash(/usr/bin/osascript:*)",
       "Bash(terminal-notifier:*)",
       "Bash(grep:*)",
       "Bash(mcp:*)",
@@ -26,7 +25,13 @@
       "Bash(yarn eslint:*)",
       "Bash(pnpm run test:*)",
       "Bash(lsof -i:*)",
-      "Bash(git reflog:*)"
+      "Bash(git reflog:*)",
+      "Bash(dev test:*)",
+      "Bash(bin/rails test:*)",
+      "Bash(git diff:*)",
+      "Bash(npx tsc --noEmit:*)",
+      "Bash(shadowenv exec -- git diff:*)",
+      "Bash(shadowenv exec -- bin/rails test:*)"
     ],
     "additionalDirectories": [
       "~/Downloads",
@@ -47,7 +52,7 @@
       }
     ]
   },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "autoUpdaterStatus": "enabled",
   "hasCompletedOnboarding": true,
   "feedbackSurveyState": {
