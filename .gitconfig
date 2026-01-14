@@ -56,10 +56,14 @@
 	tool = vimdiff
 [include]
 	path = /Users/jackpeplinski/.config/dev/gitconfig
-[maintenance]
-	repo = /Users/jackpeplinski/world/trees/root/src
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[diff]
+	tool = vscode
+[maintenance]
+	repo = /Users/jackpeplinski/world/trees/root/src
+[commit]
+	gpgsign = false

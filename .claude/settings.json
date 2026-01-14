@@ -11,6 +11,8 @@
     "allow": [
       "Bash(terminal-notifier:*)",
       "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(shadowenv exec -- grep:*)",
       "Bash(mcp:*)",
       "Bash(pwd:*)",
       "Bash(preview-md:*)",
@@ -18,20 +20,32 @@
       "Bash(gh pr list:*)",
       "Bash(gh pr diff:*)",
       "Bash(gh pr view:*)",
+      "Bash(gh view-md:*)",
+      "Bash(gh issue view:*)",
       "Bash(gh:label list:*)",
       "Bash(bin/rails test:*)",
       "Bash(yarn lint:*)",
+      "Bash(shadowenv exec -- yarn lint:*)",
       "Bash(yarn test:*)",
+      "Bash(shadowenv exec -- yarn test:*)",
       "Bash(yarn eslint:*)",
+      "Bash(shadowenv exec -- yarn eslint:*)",
       "Bash(pnpm run test:*)",
+      "Bash(shadowenv exec -- pnpm run test:*)",
       "Bash(lsof -i:*)",
       "Bash(git reflog:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
       "Bash(dev test:*)",
+      "Bash(shadowenv exec -- dev test:*)",
       "Bash(bin/rails test:*)",
+      "Bash(shadowenv exec -- bin/rails test:*)",
       "Bash(git diff:*)",
       "Bash(npx tsc --noEmit:*)",
+      "Bash(shadowenv exec -- npx tsc --noEmit:*)",
       "Bash(shadowenv exec -- git diff:*)",
-      "Bash(shadowenv exec -- bin/rails test:*)"
+      "Bash(shadowenv exec -- bin/rails test:*)",
+      "Bash(shadowenv exec -- gh view-md:*)"
     ],
     "additionalDirectories": [
       "~/Downloads",
@@ -52,7 +66,6 @@
       }
     ]
   },
-  "alwaysThinkingEnabled": true,
   "autoUpdaterStatus": "enabled",
   "hasCompletedOnboarding": true,
   "feedbackSurveyState": {

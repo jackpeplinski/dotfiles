@@ -6,6 +6,8 @@ After making a set of changes to files or satisfying a task, you MUST display a 
 terminal-notifier -message "I've finished refactoring the FooBar class into smaller methods" -title "Claude Code" -group $PWD
 ```
 
+Also notify me before if you need permissions from me so I don't have to keep checking the terminal.
+
 ### Optimization and Refactoring
 
 **[Simplification Protocol](https://www.joshbeckman.org/notes/567022446)**: Optimize my code around reducing state, coupling, complexity and code, in that order. I’m willing to add increased coupling if it makes my code more stateless. I’m willing to make it more complex if it reduces coupling. And I’m willing to duplicate code if it makes the code less complex. Only if it doesn’t increase state, coupling or complexity do I dedupe code.
@@ -249,4 +251,10 @@ Use RBS comment syntax, NOT sig {} or  T.* assertions when writing NEW files; ot
 Do NOT run or suggest bundle install; use dev up instead.
 Do NOT write comments unless explicitly requested.
 Do NOT manually update .rbi files.
+Do NOT use `!important` for CSS changes. If you think you need to use `!important`, this is almost certaintly incorrect.
 If you notice a comment has been removed, do not add it back.
+For git commands, don't use `shadowenv exec`.
+If I mention changes and you don't see any changes or not as many as you'd expect and I made the last commit, check that last commit.
+Mobile web (mWeb, MWeb) refers to using a browser on a mobile phone. 
+Mobile native refers to using a native (iOS or Android) app on a mobile phone.
+If you are unsure, ask. Do not hesitate to question me.

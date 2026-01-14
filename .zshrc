@@ -109,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 alias gtmas="gt m -a && gt submit --stack --update-only"
 alias gtcam="gt c -am"
+alias gtcane="git commit --amend --no-edit"
+alias gityolo='git add . && git commit --amend --no-edit && git push --force-with-lease'
 
 # Added by tec agent
 [[ -x /Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init ]] && eval "$(/Users/jackpeplinski/.local/state/tec/profiles/base/current/global/init zsh)"
